@@ -1,0 +1,795 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "apercu",sans-serif;
+    /* "apercu",sans-serif */
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --wht: rgb(255, 255, 255);
+    --blc: rgb(0, 0, 0);
+    --blu : blue;
+    --primary: rgb(33 150 243);
+    --secondary: rgb(106 217 211);
+    --pnk: rgb(247, 77, 208);
+    --vio: rebeccapurple;
+    --grn: rgb(1, 144, 1);
+    --grd1: linear-gradient(var(--secondary),var(--primary));
+    --grd2: linear-gradient(var(--primary),var(--secondary));
+
+}
+/*#################################### common commands #################################################*/
+.dpn{
+    display: none;
+}
+.l{
+	text-decoration: line-through;
+}
+.r{
+	color: #ff0000;
+}
+.btn{
+	width: 80px;
+    height: 50px;
+    background: var(--secondary);
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+	background-color: var(--primary)
+}
+.btn>a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+.btn2{
+	width: 90px;
+    height: 40px;
+    color: var(--wht);
+    background: var(--primary);
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.btn2:hover{
+    color: #000;
+	background-color: var(--secondary)
+}
+.btn2>a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+}
+.btn2:hover a{
+    color: #000;
+}
+.orBtn{
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 40px;
+    color: #fff;
+    background-color: red;
+    font-weight: 500;
+}
+.wdhn{
+	width: 100%;
+}
+.txalcn{
+	text-align: center;
+}
+.mrtp-20{
+	margin-top: 50px;
+}
+.brrdtn{
+	border-radius: 10px;
+}
+
+/*#################################### common commands end #################################################*/
+
+#navbar{
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--primary);
+    z-index: 1;
+}
+#logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80px;
+    height: 65px;
+    margin-left: 25px;
+}
+#logo>img{
+	width: 100%;
+	height: 100%;
+}
+/*###############################################n SUPER OFFERS ######################################*/
+ #superOffers{
+    margin-top: 10px;
+}
+.carousel-cell {
+    margin-top: 50px;
+    width: 100%;
+    height: 270PX;
+}
+.carousel-cell>img{
+    width: 100%;
+    height: 100%;
+}
+/*#################################### MENU ITEM START #################################################*/
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#menu>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+}
+#menu>ul>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+#menu>ul>li:hover{
+    background-color: var(--secondary);
+}
+#menu>ul>li>a{
+    text-decoration: none;
+    color: var(--wht);
+    font-family: "apercu",sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    order: 1;
+}
+#check{
+    display: none;
+}
+#check:checked ~ #menu{
+    display: flex;
+  }
+
+/*#################################### MENU END #################################################*/
+
+/*#################################### BOOK OPTION START #################################################*/
+  .BookOptionMother{
+    margin-top: 100px;
+  }
+  .BookOptionMother ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .BookOptionMother ul li{
+    width: 90px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: rgb(28 28 93);
+    border-radius: 75px 0px 75px 15px;
+    transition: .5s;
+  }
+  .BookOptionMother ul li:hover{
+    border-radius: 0px 75px 10px 75px;
+    background-color: var(--primary);
+  }
+  .BookOptionMother ul li:active{
+    border-radius: 0px 75px 10px 75px;
+    background-color: var(--primary);
+  }
+  .BookOptionMother ul a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(251, 251, 251);
+  }
+  .BookOptionMother li:hover a{
+      color: #000;
+  }
+  .BookOptionMother ul li i{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .BookOptionMother ul li i img{
+    width: 100%;
+    height: 100%;
+  }
+  /* 1st menu mother er kaj bellow */
+  #MotherOptions ul li{
+      border-radius: 10px;
+  }
+  
+/*#################################### BOOK OPTIONS END  #################################################*/
+
+/*#################################### PRODUCT BOX START #################################################*/  
+  .boxMother{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 5px;
+}
+.imgBox{
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #c5c5c5;
+
+}
+.imgBox>img{
+    width: 100%;
+    height: 100%;
+}
+.imgCont{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 73%);
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+.imgCont>img{
+    width: 100%;
+    height: 100%;
+}
+.imgBox:hover .imgCont{
+    bottom: 0;
+}
+.priceBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #2196f33d;
+    padding: 5px;
+    color: var(--blc);
+    font-size: 12px;
+    font-weight: 500;
+}
+.prnm {
+    text-align: center;
+    color: #434344;
+    max-width: 190px;
+    height: 35px;
+    font-size: 13px;
+}
+.pbd{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rtng{
+    margin-left: 5px;
+    font-size: 13px;
+    background-color: rgb(0, 174, 38);
+    color: white;
+    border-radius: 9px;
+    padding: 5px 12px;
+}
+.rtng>i{
+    color: gold;
+}
+.tg{
+    margin-right: 5px;
+    font-size: 13px;
+    background-color: #b50070e0;
+    color: white;
+    border-radius: 9px;
+    padding: 5px 12px;
+}
+#bn{
+    background-color: #000476;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+#bn:hover{
+    color: #000;
+    background-color: var(--secondary)
+}
+
+/*#################################### PRODUCT BOX END #################################################*/
+
+
+
+/*#################################### ORDER FORM (USER) #################################################*/
+#orderForm {
+    display: none;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background: #000000d4;
+}
+.userFrom{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: #1961e5c4;
+}
+.userFrom>div{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.userFrom input{
+ padding: 5px 5px;
+ margin: 5px 0px;
+ width: 100%;
+ height: 20px;
+ outline: none;
+ border-radius: 5px;
+ border: none;
+}
+#FullAddress{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.City_mother{
+    width: 50%;
+    padding: 5px;
+    color: #fff;
+    border-radius: 4px 0px 0px 4px;
+}
+.City{
+    outline: none;
+    width: 47%;
+    padding: 6px;
+    border-radius: 5px;
+    color: #757575;
+    font-family: "apercu",sans-serif;
+}
+#productQ{
+    width: 40%;
+}
+#totalPrice{
+    width: 40%;
+}
+#orderForm i{
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+/* EXTRA FOR REQUEST A BOOK POPUP */
+#orderForm2 {
+    display: none;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background: #000000d4;
+}
+#productQ2{
+    width: 40%;
+}
+#Author{
+    width: 40%;
+}
+#orderForm2 i{
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#SOLD {
+    display: none;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background: #000000d4;
+}
+#SOLD i{
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+/*#################################### ORDER FORM END (USER) #################################################*/
+
+
+/*#################################### FOTTER #################################################*/
+.downCont{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+}
+.left-image>img{
+    width: 100%;
+    height: 100%;
+}
+.left-image:hover img{
+    transition:  .5s;
+    width: 110%;
+    height: 110%;
+}
+.dia{
+    width: 800px;
+    overflow: hidden;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #919191;
+    font-size: 12px;
+}
+.lnks{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    color: #919191;
+}
+.lnks h3{
+    margin: 0;
+    color: black;
+}
+.lnks a{
+    text-decoration: none;
+    color: #919191;
+}
+.copyright{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #adadad;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+.copyright span a{
+    color: rgb(6, 158, 6);
+}
+/*#################################### FOTTER END #################################################*/
+
+
+/*#################################### MEDIA START #################################################*/
+
+@media screen and (max-device-width: 319px){
+    .from div{
+        width: 94%;
+        margin: 0 5px;
+    }
+    #logo>img{
+        width: 70px;
+        height: 40px;
+        font-size: 18px;
+    } 
+    .checkbtn{
+        display: block;
+    }
+    #menu{
+        display: none;
+        margin: 0;
+        background-color: #000668;
+        width: 100%;
+        order: 3;
+    }
+    #menu>ul{
+        flex-direction: column;
+    }
+    #menu>ul>li{
+        margin: 10px 0px;
+        padding: 10px 10px;
+    }
+    .carousel-cell {
+        margin-top: 30px;
+        height: 10rem;
+    }
+    .userFrom input , #FullAddress{
+        width: 90%;
+        padding: 5px 10px;
+        margin: 5px 5px;
+        
+    }
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+    .checkbtn{
+        display: block;
+    }
+    #logo>img{
+        width: 70px;
+        height: 45px;
+        font-size: 18px;
+    }
+    #menu{
+        display: none;
+        margin: 0;
+        background-color: #000668;
+        width: 100%;
+        order: 3;
+    }
+    #menu>ul{
+        flex-direction: column;
+    }
+    #menu>ul>li{
+        margin: 10px 0px;
+        padding: 10px 10px;
+    }
+    .carousel-cell {
+        margin-top: 35px;
+        height: 10rem;
+    }
+    .userFrom input , #FullAddress{
+        width: 90%;
+        padding: 5px 10px;
+        margin: 5px 5px;
+        
+    }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 602px){
+    .checkbtn{
+        display: block;
+    }
+    #logo>img{
+        width: 70px;
+        height: 50px;
+    }
+    #menu{
+        display: none;
+        margin: 0;
+        background-color: #000668;
+        width: 100%;
+        order: 3;
+    }
+    #menu>ul{
+        flex-direction: column;
+    }
+    #menu>ul>li{
+        margin: 10px 0px;
+        padding: 10px 10px;
+    }
+   
+    .carousel-cell {
+        margin-top: 35px;
+        height: 10rem;
+    }  
+    #FullAddress{
+        height: 30px;
+    }
+    .userFrom {
+        width: 80%;
+        height: 100vh;
+        margin-left: -114px;
+    }
+    .userFrom h3{
+        width: 15rem;
+        font-size: 1rem;
+    }
+    .userFrom input {
+        padding: 5px 5px;
+        margin: 2px 0px;
+        width: 100%;
+        height: 11px;
+    }
+    .moreBuy{
+        flex-direction: column;
+    }  
+}   
+@media screen and (min-device-width: 603px) and (max-device-width: 768px){
+    .checkbtn{
+        display: block;
+    }
+    #menu>ul>li{
+        padding: 0px 5px;
+    }
+    #logo>img{
+        width: 70px;
+        height: 55px;
+        font-size: 18px;
+    }
+    #menu{
+        display: none;
+        margin: 0;
+        background-color: #000668;
+        width: 100%;
+        order: 3;
+    }
+    #menu>ul{
+        flex-direction: column;
+    }
+    #menu>ul>li{
+        margin: 10px 0px;
+        padding: 10px 10px;
+    }
+    .carousel-cell {
+        margin-top: 46px;
+        height: 12rem;
+    }
+    #FullAddress{
+        height: 30px;
+    }
+    .userFrom {
+        width: 80%;
+        height: 100vh;
+        margin-left: -114px;
+    }
+    .userFrom h3{
+        width: 15rem;
+        font-size: 1rem;
+    }
+    .userFrom input {
+        padding: 5px 5px;
+        margin: 2px 0px;
+        width: 100%;
+        height: 11px;
+    }
+    .moreBuy{
+        flex-direction: column;
+    } 
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 930px){
+    #logo{
+        width: 150px;
+        height: 55px;
+        font-size: 24px;
+    }
+    #menu>ul>li{
+        margin: 0px 5px;
+        padding: 0px 5px;
+    }
+    .carousel-cell {
+        padding: 0 2px;
+        width: 80%;
+        margin-top: 46px;
+        height: 15rem;
+    }
+    .userFrom {
+        width: 80%;
+        height: 100vh;
+        margin-left: -114px;
+    }
+    .userFrom input {
+        padding: 5px 5px;
+        margin: 2px 0px;
+        width: 100%;
+        height: 11px;
+    }
+    .moreBuy{
+        flex-direction: column;
+    }
+}
+@media screen and (min-device-width: 930px){
+    .carousel-cell {
+        padding: 0 2px;
+        width: 80%;
+        margin-top: 52px;
+        height: 18rem;
+    }
+}
