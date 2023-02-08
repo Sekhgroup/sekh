@@ -627,9 +627,7 @@ a{
         display: block;
     }
     #logo>img{
-        width: 70px;
         height: 45px;
-        font-size: 18px;
     }
     #menu{
         display: none;
