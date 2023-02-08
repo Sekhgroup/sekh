@@ -109,7 +109,7 @@
       <input style="display: none;" type="text" id="productPrice" name="Product Price" value="" readonly> 
    </div>
    <div style="display: flex; justify-content: space-between;">
-    <input type="number" id="productQ" name="Quantity" placeholder="Quantity" onchange="update()" onkeyup="update()" min="1" max="50" required> 
+    <input type="number" id="productQ" name="Quantity" placeholder="Quantity" pattern="[0-9]+" onchange="update()" onkeyup="update()" min="1" max="50" required> 
     <input type="text" id="totalPrice" name="Total Price" placeholder="Total" readonly> 
  </div>
       <div style="display: flex; align-items: center; justify-content: center;"> 
@@ -204,7 +204,7 @@
        </div>
      <div style="display: flex; justify-content: space-between;">
       <!--input type="text" id="Author" placeholder="Author name" name="Author_name" value="" required-->  
-      <input type="number" id="productQ2" name="Quantity" placeholder="Quantity" min="1" max="1000" required>
+      <input type="number" id="productQ2" name="Quantity" pattern="[0-9]+" placeholder="Quantity" min="1" max="1000" required>
    </div>
         <div style="display: flex; align-items: center; justify-content: center;"> 
         <button type="submit" class="btn2">Order</button>
