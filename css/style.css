@@ -656,6 +656,9 @@ a{
    #orderForm{
         align-items: unset;
     }
+   #orderForm2{
+        align-items: unset;
+    }
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 602px){
     .checkbtn{
