@@ -591,6 +591,9 @@ a{
         height: 40px;
         font-size: 18px;
     } 
+    .carousel-cell>img{
+        margin-top: 15px;
+    }
     .checkbtn{
         display: block;
     }
