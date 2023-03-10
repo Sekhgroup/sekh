@@ -4,568 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-image" href="images/egg/logo.png"/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <title>SekhGroup</title>
-	
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2286883732205315"
-     crossorigin="anonymous"></script>
+    <title>Sebakendra</title>
 </head>
 <body>
-
-
-
-<!--############################### NAVBAR STARTING ######################################################-->
-<section id="navbar">
-        <div id="logo"><img src="images/egg/logo.png" loading="lazy"></div>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
-        <div id="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Bussiness</a></li>
-                <li><a href="#" onclick="Rqb()">Request a service</a></li>
-            </ul>
-        </div>
-    </section>
-<!--############################### NAVBAR END ######################################################-->
-
-
-<!--##################################################################################################
-    ##################################################################################################
-    #############################                                   ##################################
-    #############################             POP UP                ##################################
-    #############################                                   ##################################
-    ##################################################################################################
-    ##################################################################################################-->
-
-
-
-
- <!-- ################################## ORDER FORM STARTTING HERE #########################################-->
-<div id="orderForm" style="display: none;">
-<div class="userFrom">
-   <form action="https://formsubmit.co/sekhgroupco@gmail.com" method="POST">
-      <h3 id="orderNow" style="text-align: center; margin: 0; padding: 0;
-      color: white;"></h3>
-       <div>
-        <input type="text" class="" name="Name" id="Name" placeholder="Full Name" required=""
-        style="text-transform: uppercase;" minlength="6"  maxlength="40">
-      </div>
-      <div>
-        <input type="email" class="" name="Email" id="Sender" placeholder="Email" minlength="4"
-        maxlength="40">
-      </div>
-      <div>
-          <input type="text" class="" name="Phone no" id="number" placeholder="Mobile no."
-         pattern="[1-9]{1}[0-9]{9}" required>
-      </div>
-       <div>
-        <input type="text" class="" name="Address" id="FullAddress" placeholder="Full Address" required 
-        minlength="15"  maxlength="100">
-      </div>
-      <div>
-        <input type="text" class="" name="Landmark" id="Landmark" placeholder="Nearest Rail Station" required
-        minlength="4"  maxlength="25">
-      </div>
-      <div>
-        <input type="text" class="" name="Pin" id="Pin_no" placeholder="Pin code" required 
-        minlength="6" maxlength="6">
-      </div>
-      <div style="display: flex; justify-content: space-between; margin: 7px 0 5px 0;">
-        <label for="City" class="City_mother">Choose your city</label>
-        <select class="City" name="City">
-          <option value="Akaipur">Akaipur</option>
-          <option value="Ashoknagar">Ashoknagar</option>
-          <option value="Bamangachhi">Bamangachhi</option>
-          <option value="Bagdah">Bagdah</option>
-          <option value="Barasat">Barasat</option>
-          <option value="Bira">Bira</option>
-          <option value="Bongaon">Bongaon</option>
-          <option value="Chakdah">Chakdah</option>
-          <option value="Chandpara">Chandpara</option>
-          <option value="Duttapukur">Duttapukur</option>
-          <option value="Dattyaphulia">Dattyaphulia</option>
-          <option value="Gangnapur">Gangnapur</option>
-          <option value="Gobardanga">Gobardanga</option>
-          <option value="Gopalnagar">Gopalnagar</option>
-          <option value="Habrah">Habrah</option>
-          <option value="Madanpur">Madanpur</option>
-          <option value="Machlandapur">Machlandapur</option>
-          <option value="Majhergram">Majhergram</option>
-          <option value="Ranaghat">Ranaghat</option>
-        </select>
-      </div>
-      <div>
-        <input style="display: none;" type="text" id="producName" name="Product Name" value="" readonly> 
-     </div>
-     <div>
-      <input style="display: none;" type="text" id="productId" name="Product Id" value="" readonly> 
-   </div>
-     <div>
-      <input style="display: none;" type="text" id="productPrice" name="Product Price" value="" readonly> 
-   </div>
-   <div style="display: flex; justify-content: space-between;">
-    <input type="number" id="productQ" name="Quantity" placeholder="Quantity" pattern="[0-9]+" onchange="update()" onkeyup="update()" min="1" max="50" required> 
-    <input type="text" id="totalPrice" name="Total Price" placeholder="Total" readonly> 
- </div>
-      <div style="display: flex; align-items: center; justify-content: center;"> 
-      <button type="submit" class="btn2">ORDER</button>
-      <!-- ####################################################################################################################-->
-      <div id="close" style="border-radius: 10px"><i class="fa fa-remove" onclick="closefun()"></i></div>
-      <!-- ####################################################################################################################-->
-      
-   </div>
-    </form>
-</div>
+  <div class="mother">
+    <div class="banner"><img src="logo/logoblue.png" alt="logo"></div>
+    <div id="orderForm">
      
-
-      <!--DIRECT ORDER-->
-<div class="moreBuy" style="display: flex;">    
-      <button class="orBtn"><a>OR</a></button>
-      <button class="btn2"><a href="tel: +919907089287">Call</a></button>
-      <button class="btn2"><a href="https://wa.me/message/VF6LM4DBIMIEJ1" target="-_blank">
-      Message</a></button>
-</div>      
-       <!--DIRECT ORDER END-->
-      
-
-</div>
-<!-- ################################## ORDER FORM END HERE #########################################-->
-
-
-
-
-
-
-
-<!-- ################################## REQUEST A SERVICE #########################################-->
-<div id="orderForm2" style="display: none;">
-  <div class="userFrom">
-     <form action="https://formsubmit.co/sekhgroupco@gmail.com" method="POST">
-      <h3 style="text-align: center; margin: 0; padding: 0;
-      color: white;">Request a service</h3>
-      <div>
-        <input style="display: none;" type="text" class="" name="FORM TYPE" value="REQUEST A BOOK" readonly >
-      </div>
-         <div>
-          <input type="text" class="" name="Name"  placeholder="Full Name" required=""
-          style="text-transform: uppercase;" minlength="6"  maxlength="40">
-        </div>
-        <div>
-          <input type="email" class="" name="Email" placeholder="Email" minlength="4"
-          maxlength="40">
-        </div>
-        <div>
-            <input type="text" class="" name="Phone no" placeholder="Mobile no."
-           pattern="[1-9]{1}[0-9]{9}" required>
-        </div>
-         <div>
-          <input type="text" id="FullAddress2" name="Address" placeholder="Full Address" required 
-          minlength="15"  maxlength="100">
-        </div>
-        <div>
-          <input type="text" class="" name="Landmark" placeholder="Nearest Rail Station" required
-          minlength="4"  maxlength="25">
-        </div>
-        <div>
-          <input type="text" class="" name="Pin" placeholder="Pin code" required 
-          minlength="6" maxlength="6">
-        </div>
-        <div style="display: flex; justify-content: space-between; margin: 7px 0 5px 0;">
-          <label for="City" class="City_mother">Choose your city</label>
-          <select class="City" name="City">
-            <option value="Akaipur">Akaipur</option>
-            <option value="Ashoknagar">Ashoknagar</option>
-            <option value="Bamangachhi">Bamangachhi</option>
-            <option value="Bagdah">Bagdah</option>
-            <option value="Barasat">Barasat</option>
-            <option value="Bira">Bira</option>
-            <option value="Bongaon">Bongaon</option>
-            <option value="Chakdah">Chakdah</option>
-            <option value="Chandpara">Chandpara</option>
-            <option value="Duttapukur">Duttapukur</option>
-            <option value="Dattyaphulia">Dattyaphulia</option>
-            <option value="Gangnapur">Gangnapur</option>
-            <option value="Gobardanga">Gobardanga</option>
-            <option value="Gopalnagar">Gopalnagar</option>
-            <option value="Habrah">Habrah</option>
-            <option value="Madanpur">Madanpur</option>
-            <option value="Machlandapur">Machlandapur</option>
-            <option value="Majhergram">Majhergram</option>
-            <option value="Ranaghat">Ranaghat</option>
-          </select>
-        </div>
-        <div>
-          <input type="text" placeholder="Product name" name="Product_Name" value="" required> 
-       </div>
-     <div style="display: flex; justify-content: space-between;">
-      <!--input type="text" id="Author" placeholder="Author name" name="Author_name" value="" required-->  
-      <input type="number" id="productQ2" name="Quantity" pattern="[0-9]+" placeholder="Quantity" min="1" max="1000" required>
-   </div>
-        <div style="display: flex; align-items: center; justify-content: center;"> 
-        <button type="submit" class="btn2">Order</button>
-        <!-- ####################################################################################################################-->
-        <div id="close2" style="border-radius: 10px"><i class="fa fa-remove" onclick="closefun2()"></i></div>
-        <!-- ####################################################################################################################-->
-        
-     </div>
-      </form>
-  </div>
-       
-  
-        <!--DIRECT ORDER-->
-  <div class="moreBuy" style="display: flex;">    
-        <button class="orBtn"><a>OR</a></button>
-        <button class="btn2"><a href="tel: +919907089287">Call</a></button>
-        <button class="btn2"><a href="https://wa.me/message/VF6LM4DBIMIEJ1" target="-_blank">
-        Message</a></button>
-  </div>      
-         <!--DIRECT ORDER END-->
-  
-  </div>
-  <!-- ################################## REQUEST AN EGG  END #########################################-->
-
-<!-- ################################## SOLD POP UP #########################################-->
-<div id="SOLD" style="display: none;"><P style="width: 100%;">SOLD</P>
-  <div id="close3" style="border-radius: 10px"><i class="fa fa-remove" onclick="closefun3()"></i></div>
-</div>
-
-  <!-- ################################## SOLD POP UP  END #########################################-->
-
-
-
-
-
-  
-<!--##########################STARTING RUNNING IMAGES###########################################-->
-
-<section id="superOffers">
-
-  <div class="carousel" data-flickity='{"autoPlay": true, "imagesLoaded":true }'>
-    <div class="carousel-cell">
-      <img src="images/slide_offers/10.jpg" alt="" loading="lazy">
-    </div>
-    <div class="carousel-cell">
-     <img src="images/slide_offers/20.jpg" alt="" loading="lazy">
-    </div>
-    <div class="carousel-cell">
-      <img src="images/slide_offers/30.jpg" alt="" loading="lazy">
-    </div>
-    <!--div class="carousel-cell">
-      <img src="images/slide_offers/slide 4.jpg" alt="" loading="lazy">
-    </div>
-    <div class="carousel-cell">
-      <img src="images/slide_offers/slide 5.jpg" alt="" loading="lazy">
-    </div>
-    <div class="carousel-cell">
-      <img src="images/slide_offers/slide 3.jpg" alt="" loading="lazy">
-    </div>
-    <div class="carousel-cell">
-      <img src="images/slide_offers/slide 7.jpg" alt="" loading="lazy">
-    </div-->							      
-								      
-  </div>
-
-	
-
-</section>
-<!--########################## END RUNNING IMAGES###########################################-->
-
-
-
-
-
-
-
-
-
-<!--##################################################################################################
-    ##################################################################################################
-    #############################                                   ##################################
-    #############################  EGG OPTIONS STARTING FROM HERE  ##################################
-    #############################                                   ##################################
-    ##################################################################################################
-    ##################################################################################################-->
-
-
-
-
-
-
-
-    <!--############################### MOTHER EGG OPTIONS START ######################################################-->
-    <h1 class="txalcn wdhn" style="margin-top: 100px;">Order now our village colected products.</h1>
-<section class="BookOptionMother"> <!-- BOOK OPTION MOTHER START FOR UL AND LI -->
-<section id="MotherOptions">
-  <ul>
-    <li id="CompetativeExame" onclick="Mother_Fun1()">
-        <a href="#BookOptionsCompetative">Start</li>
-</ul>
-</section>
-
-<!-- ################################## MOTHER BOOK CATAGORY END ################################## -->
-
-
-
-
-
-
-
-
-
-<!-- ################################## COMPETATIVE BOOK CATAGORY START ################################## -->
-<section id="BookOptionsCompetative" style="display: none; margin-top: 100px;">
-    <ul>
-        <li id="Police" onclick="Cmpt_Fun1()">
-            <a href="#Cmpt_id1">HEN</li>
-
-        <li id="Ssc" onclick="Cmpt_Fun2()">
-            <a href="#Cmpt_id2">DUCK</li>
-    </ul>
-</section>
-<!--############################################ HEN EGGS ######################################################## -->
-<!--########################################################################################################################-->
-
-<section style="display: none;" id="Cmpt_id1" class="boxMother">
-    <h5 class="wdhn txalcn">What are the benefits of hen eggs?
-      “Eggs are a good source of protein (both whites/yolk). They also contain heart-healthy unsaturated fats and are a great source of important nutrients, such as vitamin B6, B12 and vitamin D,” says Kurt Hong, MD, an internal medicine specialist at Keck Medicine of US</h5>
-
-
-
-    <div class="box">
-      <div class="imgBox"><img src="images/egg/5.png" loading="lazy">
-        <div class="imgCont">
-         <img src="images/bookbg.jpg" loading="lazy">
+             <div class="userFrom"><h4>আমি সেবাকেন্দ্রে কাজ করতে চাই</h4>
+           <form action="https://formsubmit.co/clikaby@gmail.com" method="POST">
+              <h3 id="orderNow" style="text-align: center; margin: 0; padding: 0;
+              color: white;"></h3>
+               <div>
+                <input type="text" class="" name="Name" id="Name" placeholder="আপনার পুরো নাম লিখুন" required=""
+                style="text-transform: none;" minlength="6"  maxlength="40">
+              </div>
+              <div>
+                <input type="email" class="" name="Email" id="Sender" placeholder="আপনার ইমেল এড্রেসটি লিখুন" minlength="4"
+                maxlength="40">
+              </div>
+              <div>
+                  <input type="text" class="" name="Wp number" id="number" placeholder="আপনার মোবাইল নাম্বারটি লিখুন "
+                 pattern="[1-9]{1}[0-9]{9}" required>
+              </div>
+               <div>
+                <input type="text" class="FullAd" name="Address" id="FullAddress" placeholder="আপনার পুরো ঠিকানাটি লিখুন " required 
+                minlength="15"  maxlength="100">
+              </div>
+              <div>
+                <label for="works" class="Lc">আপনার জানা কাজ গুলি নীচে লিখুন*</label><br>
+                <input type="text" class="occupation" name="occupation1" id="Occupation1" placeholder="কাজ ১" 
+                minlength="2" maxlength="50"><br>
+                <input type="text" class="occupation" name="occupation2" id="Occupation2" placeholder="কাজ ২" 
+                minlength="2" maxlength="50"><br>
+                <input type="text" class="occupation" name="occupation3" id="Occupation3" placeholder="কাজ ৩" 
+                minlength="2" maxlength="50">
+              </div>
+              <div>
+                <input type="text" class="Bike_name" name="Xp" id="Xp" placeholder=" কাজ গুলিতে অভিজ্ঞতা কত বছরের লিখুন" 
+                minlength="1" maxlength="50">
+              </div>
+               <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 7px 0 5px 0;">
+                <label for="Lc" class="Lc">আমি সব শর্ত মেনে নিচ্ছি?<button id="terms" onclick="myFunction()">【!】</button></label>
+                <select class="do" name="Condition agree?" required>
+                  <option value="yes">হ্যা</option>
+                  <option value="no">না</option>
+                </select>
+              </div>
+              <button type="submit" class="btn2"><b>জমা দিন </b></button>
+              <div>
+             </form>
           </div>
-           </div>
-              <div class="priceBox">
-                <div class="prnm"> 1 Dozen Deshi hen eggs</div>
-                 <div class="pbd">
-                  <div class="dcnt r">10% off</div>
-                 <div class="rp l">220</div>
-                 <div class="Rs">Rs:</div>
-                <div class="adp">199</div>
-               </div>
-              <div class="bn">
-            <div class="rtng">4.9 <i class="fa fa-star"></i></div>
-          <div class="tg">100% genuin</div>
+
+
+
+
+
+
+          <div style="display: none;"><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=147128&s=10' border='0' alt='Free Website Hit Counter'></a><br / ><small></small></div>
         </div>
-      <button id="bn" onclick="ordrnw(this)">Buy now</button></div>
-    </div>
-
-
-    <div class="box">
-      <div class="imgBox"><img src="images/Animal/hen.png" loading="lazy">
-        <div class="imgCont">
-         <img src="images/bookbg.jpg" loading="lazy">
-          </div>
-           </div>
-              <div class="priceBox">
-                <div class="prnm">Per kg Deshi hen </div>
-                 <div class="pbd">
-                  <div class="dcnt r">20% off</div>
-                 <div class="rp l">500</div>
-                 <div class="Rs">Rs:</div>
-                <div class="adp">399</div>
-               </div>
-              <div class="bn">
-            <div class="rtng">4.3 <i class="fa fa-star"></i></div>
-          <div class="tg">100% genuin</div>
-        </div>
-      <button id="bn" onclick="ordrnw(this)">Buy now</button></div>
-    </div>
-  </section>
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-<!--############################################ DUCK SECTION ######################################################## -->
-<!--########################################################################################################################-->
-
-<section style="display: none;" id="Cmpt_id2" class="boxMother">
-    
-    <h5 class="wdhn txalcn">When it comes to duck eggs vs. chicken eggs, those from a duck have a richer flavor than those from a chicken. The taste is more intense, almost as if you added an extra chicken yolk to your omelet. They are also creamier than chicken eggs, thanks to the larger yolks.</h5>
-
-
-    <div class="box">
-  <div class="imgBox"><img src="images/egg/1.png" loading="lazy">
-    <div class="imgCont">
-     <img src="images/bookbg.jpg" loading="lazy">
-      </div>
-       </div>
-          <div class="priceBox">
-            <div class="prnm">1 Dozen Greenesh duck eggs</div>
-             <div class="pbd">
-              <div class="dcnt r">10% off</div>
-             <div class="rp l">200</div>
-             <div class="Rs">Rs:</div>
-            <div class="adp">180</div>
-           </div>
-          <div class="bn">
-        <div class="rtng">4.3 <i class="fa fa-star"></i></div>
-      <div class="tg">100% genuin</div>
-    </div>
-  <button id="bn" onclick="ordrnw(this)">Buy now</button></div>
-</div>
-
-
-
-<div class="box">
-  <div class="imgBox"><img src="images/Animal/duck.png" loading="lazy">
-    <div class="imgCont">
-     <img src="images/bookbg.jpg" loading="lazy">
-      </div>
-       </div>
-          <div class="priceBox">
-            <div class="prnm">1 piece Deshi duck</div>
-             <div class="pbd">
-              <div class="dcnt r">30% off</div>
-             <div class="rp l">570</div>
-             <div class="Rs">Rs:</div>
-            <div class="adp">399</div>
-           </div>
-          <div class="bn">
-        <div class="rtng">4.3 <i class="fa fa-star"></i></div>
-      <div class="tg">100% genuin</div>
-    </div>
-  <button id="bn" onclick="ordrnw(this)">Buy now</button></div>
-</div>
-	
-	
-	
-	
-	
-	<div class="box">
-  <div class="imgBox"><img src="images/Animal/duck2.png" loading="lazy">
-    <div class="imgCont">
-     <img src="images/bookbg.jpg" loading="lazy">
-      </div>
-       </div>
-          <div class="priceBox">
-            <div class="prnm">Ras has</div>
-             <div class="pbd">
-              <div class="dcnt r">15% off</div>
-             <div class="rp l">1763</div>
-             <div class="Rs">Rs:</div>
-            <div class="adp">1499</div>
-           </div>
-          <div class="bn">
-        <div class="rtng">4.5 <i class="fa fa-star"></i></div>
-      <div class="tg">100% genuin</div>
-    </div>
-  <button id="bn" onclick="ordrnw(this)">Buy now</button></div>
-</div>
-</section>
 
 
 
 
 
+              <script>
+                // When the user clicks on div, open the popup
+function myFunction() {
+  alert("(1) সেবাকেন্দের সাথে যুক্ত হওয়ার পর তারা আমাকে কাজ দিলে তা আমি আমার পছন্দ হলে করব | (2) কাজে যাবার আগে ও পরে তাদেরকে কাজসম্পর্কে বিস্তারিত বিবরণ দেব, এবং তারা কোনো চার্জ করলে সেটা দিতে আমি বাধ্য (যদিও সেবাকেন্দ্র অপ্রয়োজনীয় চার্জকরেনা) ");
+}
 
-
-
-
-<!--##################################### FOTTER STARTING ################################################################-->
-<section>
-
-  <div id="about" class="downCont">
-    <div class="left-image"><img src="images/egg/logo.png" loading="lazy"></div>
-    <div class="dia">
-      <h1 style="color: var(--primary)">Welcome to Sekh Group</h1>
-      <p>Here you can find best products at very low price. The quality of products is top level. There you can find our top products. That means what you wants, you'll get absolute that products. Book your selected products and get it safe, secure, fast and free home delivery with customer service (24×7)</p>
-      <p>Start shoping for you and your relatives. Don't worry about product quality, we promise to you the best quality products.<span id="spof"></span></p>
-    
-	<!-- Badge Code  page view- Do Not Change The Code -->
-<a class="hitCounter" href="https://visitorshitcounter.com/" target="_blank" title="Hit counter" data-name="5bb7062a235f6ce0cbf74baf7c318ef4|9|external|5000|#ffffff|#0f0f0f|small|s-hit">Hit Counter</a><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script>
-<!-- Badge Code End Here -->
-	  
-</div>
-  </div>
-
-
-
-  <div class="lnks" style="font-size: 10px;">
-    <div class="lnksChld">
-      <h3 class="txalcn">Contact Us</h3>
-      <ol type="number">
-        <li><a href="">
-        Facebook</a></li>
-        <li><a href="https://wa.me/message/VF6LM4DBIMIEJ111" target="-_blank">
-        Whatsapp</a></li>
-        <li><a href="tel: +919907089287">
-        Call</a></li>
-        <li><a href="mailto: Sekhgroupco@gmail.com">
-        Mail</a></li>
-      </ol>
-    </div>
-
-    <div class="lnksChld">
-      <h3 class="txalcn">Report a Problem</h3>
-      <ol type="number">
-        <li><a href="mailto: Sekhgroupco@gmail.com">
-        Return Product</a></li>
-        <li><a href="mailto: Sekhgroupco@gmail.com">
-        Website Problem</a></li>
-        <li><a href="mailto: Sekhgroupco@gmail.com">
-        Spam Counter</a></li>
-        <li><a href="mailto: Sekhgroupco@gmail.com">
-        Bugs</a></li>
-      </ol>
-    </div>
-
-    <div class="lnksChld">
-      <h3 class="txalcn">Our Partners</h3>
-      <ol type="number">
-        <li><a href="">Shops</a></li>
-        <li><a href="">Halls</a></li>
-        <li><a href="">Managers</a></li>
-        <li><a href="">Workers</a></li>
-      </ol>
-    </div>
-
-    <div class="lnksChld">
-      <h3 class="txalcn">Our Open Jobs</h3>
-      <ol type="number">
-        <li><a href="mailto: Sekhgroupco@gmail.com">
-        Become Our Partner</a></li>
-        <li><a href="mailto: Sekhgroupco@gmail.com">
-        Suggest Us</a></li>
-        <li><a href="mailto: Sekhgroupco@gmail.com">
-        Open Jobs</a></li>
-      </ol>
-    </div>
-  </div>
-
-
-
-<div class="copyright">
-        This Is A Registered Private E-comerce Website. © Copyright 2022 All Rights Reseverd By Sekh Group<br>
-        website develop credid
-         <span><a href="https://www.facebook.com/profile.php?id=10001787513618" target="_blank"> @Sekh Group</a> </span>.
-    </div>  
-</section>
-<!--################################### FOTTER END ###################################################################-->
-
-<!--################################### SCRIPT SECTION ##########################################################################-->
-<script type="text/javaScript" src="javaScript/index.js"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--########################################################################################################################-->
-	
-	
-	
+              </script>
+                <!-- Badge Code End Here --></h6></div>
+            
 </body>
 </html>
