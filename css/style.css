@@ -72,6 +72,7 @@ input{
     color: #ff2659;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
 }
 #terms:hover{
     color: #9e0025;
